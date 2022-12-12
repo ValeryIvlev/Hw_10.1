@@ -19,7 +19,6 @@ public class SimpleTest {
         Configuration.headless = false;
         Configuration.webdriverLogsEnabled = true;
         Configuration.browser = Browsers.CHROME;
-        Selenide.open();
     }
     @Test
     void fillFromTest() {
