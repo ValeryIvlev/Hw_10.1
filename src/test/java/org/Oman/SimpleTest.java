@@ -2,6 +2,7 @@ package org.Oman;
 
 import com.codeborne.selenide.Browsers;
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -18,7 +19,7 @@ public class SimpleTest {
         Configuration.headless = false;
         Configuration.webdriverLogsEnabled = true;
         Configuration.browser = Browsers.CHROME;
-        open();
+        Selenide.open();
     }
     @Test
     void fillFromTest() {
